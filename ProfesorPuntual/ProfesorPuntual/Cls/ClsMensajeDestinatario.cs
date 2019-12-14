@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProfesorPuntual.Cls
 {
-    class MensajeDestinatario
+    class ClsMensajeDestinatario
     {
         //ATRIBUTOS
         private int ID;
