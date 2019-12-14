@@ -65,6 +65,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cls\Causal.cs" />
+    <Compile Include="Cls\ClsBDProfesor.cs" />
+    <Compile Include="Cls\ClsProfesor.cs" />
+    <Compile Include="Cls\ClsTipo.cs" />
+    <Compile Include="Cls\ClsDestinatario.cs" />
+    <Compile Include="Cls\Mensaje.cs" />
+    <Compile Include="Cls\MensajeDestinatario.cs" />
     <Compile Include="FrmBienvenido.cs">
       <SubType>Form</SubType>
     </Compile>
