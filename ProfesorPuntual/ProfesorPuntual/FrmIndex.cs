@@ -19,9 +19,21 @@ namespace ProfesorPuntual
 
         private void FrmIndex_Load(object sender, EventArgs e)
         {
+            Cls.ClsProfesor ObjProfesor = new Cls.ClsProfesor();
+            DataTable Teacher, Functionaries, Delegate, Receivers, Messages;
+            Teacher = ObjProfesor.BuscarDocentes();
+            Functionaries = ObjProfesor.BuscarFuncionario();
+            Delegate = ObjProfesor.BuscarDelegados();
+            Receivers = ObjProfesor.BuscarDestinatarios();
+            Messages = ObjProfesor.BuscarMensajes();
+            LblNom.Text = Teacher.Rows[0][1].ToString();//Muestro el docente logueado
+            IndGVFunc.DataSource = Functionaries;//Cargo los datagridviews
+            IndGVDel.DataSource = Delegate;
+            DestGVDest.DataSource = Receivers;
+            MensajesGMens.DataSource = Messages;
 
         }
-
+        
         private void BttnIndex_Click(object sender, EventArgs e)
         {//oculto el resto de marcadores y muestro el seleccionado
             PBXInicio.Visible = true;

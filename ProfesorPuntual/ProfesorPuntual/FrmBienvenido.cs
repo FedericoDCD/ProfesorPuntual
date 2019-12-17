@@ -34,9 +34,20 @@ namespace ProfesorPuntual
 
         private void LoadFormNewUsers() {//Cargo el formulario de registro
             Thread.Sleep(5000);
-            FrmNewUser ObjNewUser = new FrmNewUser();
-            this.Invoke(new MethodInvoker(Close));//Invoco por separado el close del formulario para poder cerrarlo
-            ObjNewUser.Show();
+            Cls.ClsProfesor ObjProf = new Cls.ClsProfesor();
+            DataTable DT;
+            DT = ObjProf.BuscarDocentes();
+            if (DT.Rows.Count == 0)//si ya existe un profesor lo logueo, sino redirijo al formulario de registro
+            {
+                FrmNewUser ObjNewUser = new FrmNewUser();
+                this.Invoke(new MethodInvoker(Close));//Invoco por separado el close del formulario para poder cerrarlo
+                ObjNewUser.Show();
+            }
+            else {
+                FrmIndex ObjIndex = new FrmIndex();
+                this.Invoke(new MethodInvoker(Close));//Invoco por separado el close del formulario para poder cerrarlo
+                ObjIndex.Show();
+            }
             Application.Run();//Permite que la app siga ejecutandose en el hilo
         }
     }

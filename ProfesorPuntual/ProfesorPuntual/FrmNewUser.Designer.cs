@@ -33,16 +33,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BttnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.TxtNom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TxtMail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TxtCel = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.BttnSave = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.LblVNom = new System.Windows.Forms.Label();
+            this.LblVMail = new System.Windows.Forms.Label();
+            this.LblVCel = new System.Windows.Forms.Label();
+            this.TxtNroFuncionario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.LblVNro = new System.Windows.Forms.Label();
             this.Bar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,77 +92,84 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "CREA TU PERFIL DOCENTE:";
             // 
-            // bunifuMaterialTextbox1
+            // TxtNom
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox1.HintText = "Nombre";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox1.LineThickness = 2;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(56, 154);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox1.TabIndex = 4;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtNom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNom.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNom.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNom.HintText = "Nombre";
+            this.TxtNom.isPassword = false;
+            this.TxtNom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNom.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxtNom.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNom.LineThickness = 2;
+            this.TxtNom.Location = new System.Drawing.Point(56, 154);
+            this.TxtNom.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNom.Name = "TxtNom";
+            this.TxtNom.Size = new System.Drawing.Size(244, 36);
+            this.TxtNom.TabIndex = 2;
+            this.TxtNom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtNom.Enter += new System.EventHandler(this.TxtNom_Enter);
+            this.TxtNom.Leave += new System.EventHandler(this.TxtNom_Leave);
             // 
-            // bunifuMaterialTextbox2
+            // TxtMail
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox2.HintText = "Mail ";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox2.LineThickness = 2;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(56, 209);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox2.TabIndex = 5;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtMail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtMail.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtMail.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtMail.HintText = "Mail ";
+            this.TxtMail.isPassword = false;
+            this.TxtMail.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtMail.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxtMail.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtMail.LineThickness = 2;
+            this.TxtMail.Location = new System.Drawing.Point(56, 209);
+            this.TxtMail.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Size = new System.Drawing.Size(244, 36);
+            this.TxtMail.TabIndex = 3;
+            this.TxtMail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtMail.Enter += new System.EventHandler(this.TxtMail_Enter);
+            this.TxtMail.Leave += new System.EventHandler(this.TxtMail_Leave);
             // 
-            // bunifuMaterialTextbox3
+            // TxtCel
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.HintText = "Celular";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.LineThickness = 2;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(56, 267);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox3.TabIndex = 6;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtCel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtCel.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtCel.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtCel.HintText = "Celular";
+            this.TxtCel.isPassword = false;
+            this.TxtCel.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtCel.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxtCel.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtCel.LineThickness = 2;
+            this.TxtCel.Location = new System.Drawing.Point(56, 267);
+            this.TxtCel.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtCel.Name = "TxtCel";
+            this.TxtCel.Size = new System.Drawing.Size(244, 36);
+            this.TxtCel.TabIndex = 4;
+            this.TxtCel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtCel.Enter += new System.EventHandler(this.TxtCel_Enter);
+            this.TxtCel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCel_KeyPress);
+            this.TxtCel.Leave += new System.EventHandler(this.TxtCel_Leave);
             // 
-            // button1
+            // BttnSave
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(35)))), ((int)(((byte)(27)))));
-            this.button1.Location = new System.Drawing.Point(56, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 47);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "GUARDAR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BttnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.BttnSave.FlatAppearance.BorderSize = 0;
+            this.BttnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BttnSave.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(35)))), ((int)(((byte)(27)))));
+            this.BttnSave.Location = new System.Drawing.Point(56, 324);
+            this.BttnSave.Name = "BttnSave";
+            this.BttnSave.Size = new System.Drawing.Size(244, 47);
+            this.BttnSave.TabIndex = 5;
+            this.BttnSave.Text = "GUARDAR";
+            this.BttnSave.UseVisualStyleBackColor = false;
+            this.BttnSave.Click += new System.EventHandler(this.BttnSave_Click);
             // 
             // bunifuDragControl1
             // 
@@ -171,72 +178,75 @@
             this.bunifuDragControl1.TargetControl = this.Bar;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // label3
+            // LblVNom
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
-            this.label3.Location = new System.Drawing.Point(307, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 19);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "*";
-            this.label3.Visible = false;
+            this.LblVNom.AutoSize = true;
+            this.LblVNom.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.LblVNom.Location = new System.Drawing.Point(307, 171);
+            this.LblVNom.Name = "LblVNom";
+            this.LblVNom.Size = new System.Drawing.Size(18, 19);
+            this.LblVNom.TabIndex = 7;
+            this.LblVNom.Text = "*";
+            this.LblVNom.Visible = false;
             // 
-            // label4
+            // LblVMail
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
-            this.label4.Location = new System.Drawing.Point(307, 226);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 19);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "*";
-            this.label4.Visible = false;
+            this.LblVMail.AutoSize = true;
+            this.LblVMail.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.LblVMail.Location = new System.Drawing.Point(307, 226);
+            this.LblVMail.Name = "LblVMail";
+            this.LblVMail.Size = new System.Drawing.Size(18, 19);
+            this.LblVMail.TabIndex = 8;
+            this.LblVMail.Text = "*";
+            this.LblVMail.Visible = false;
             // 
-            // label5
+            // LblVCel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
-            this.label5.Location = new System.Drawing.Point(307, 284);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(18, 19);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "*";
-            this.label5.Visible = false;
+            this.LblVCel.AutoSize = true;
+            this.LblVCel.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVCel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.LblVCel.Location = new System.Drawing.Point(307, 284);
+            this.LblVCel.Name = "LblVCel";
+            this.LblVCel.Size = new System.Drawing.Size(18, 19);
+            this.LblVCel.TabIndex = 9;
+            this.LblVCel.Text = "*";
+            this.LblVCel.Visible = false;
             // 
-            // bunifuMaterialTextbox4
+            // TxtNroFuncionario
             // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.HintText = "Nº Funcionario";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.LineThickness = 2;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(56, 101);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox4.TabIndex = 10;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtNroFuncionario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNroFuncionario.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNroFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNroFuncionario.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNroFuncionario.HintText = "Nº Funcionario";
+            this.TxtNroFuncionario.isPassword = false;
+            this.TxtNroFuncionario.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNroFuncionario.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxtNroFuncionario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.TxtNroFuncionario.LineThickness = 2;
+            this.TxtNroFuncionario.Location = new System.Drawing.Point(56, 101);
+            this.TxtNroFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNroFuncionario.Name = "TxtNroFuncionario";
+            this.TxtNroFuncionario.Size = new System.Drawing.Size(244, 36);
+            this.TxtNroFuncionario.TabIndex = 1;
+            this.TxtNroFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtNroFuncionario.OnValueChanged += new System.EventHandler(this.TxtNroFuncionario_OnValueChanged);
+            this.TxtNroFuncionario.Enter += new System.EventHandler(this.TxtNroFuncionario_Enter);
+            this.TxtNroFuncionario.Leave += new System.EventHandler(this.TxtNroFuncionario_Leave);
             // 
-            // label6
+            // LblVNro
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
-            this.label6.Location = new System.Drawing.Point(307, 118);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "*";
-            this.label6.Visible = false;
+            this.LblVNro.AutoSize = true;
+            this.LblVNro.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVNro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.LblVNro.Location = new System.Drawing.Point(307, 118);
+            this.LblVNro.Name = "LblVNro";
+            this.LblVNro.Size = new System.Drawing.Size(18, 19);
+            this.LblVNro.TabIndex = 11;
+            this.LblVNro.Text = "*";
+            this.LblVNro.Visible = false;
             // 
             // FrmNewUser
             // 
@@ -244,21 +254,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(358, 404);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.bunifuMaterialTextbox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.LblVNro);
+            this.Controls.Add(this.TxtNroFuncionario);
+            this.Controls.Add(this.LblVCel);
+            this.Controls.Add(this.LblVMail);
+            this.Controls.Add(this.LblVNom);
+            this.Controls.Add(this.BttnSave);
+            this.Controls.Add(this.TxtCel);
+            this.Controls.Add(this.TxtMail);
+            this.Controls.Add(this.TxtNom);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Bar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNewUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNewUser";
+            this.Load += new System.EventHandler(this.FrmNewUser_Load);
             this.Bar.ResumeLayout(false);
             this.Bar.PerformLayout();
             this.ResumeLayout(false);
@@ -272,15 +283,15 @@
         private System.Windows.Forms.Button BttnClose;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxtNom;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxtMail;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxtCel;
+        private System.Windows.Forms.Button BttnSave;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LblVNom;
+        private System.Windows.Forms.Label LblVMail;
+        private System.Windows.Forms.Label LblVCel;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxtNroFuncionario;
+        private System.Windows.Forms.Label LblVNro;
     }
 }
