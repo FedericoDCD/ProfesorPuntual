@@ -291,5 +291,28 @@ namespace ProfesorPuntual.Cls
                 }
             }
         }
+        public System.Data.DataTable BuscarTipoDestinatario()
+        {
+            CLSBDProfesor BD = new CLSBDProfesor();//Creo un objeto de la clase de base de datos para utilizarla y realizar la comunicación
+            using (SqlCommand comand = new SqlCommand("PRABuscarTipoDestinatarios", BD.Conn))//Selecciono el procedimiento almacenado
+            {
+                try
+                {
+                    comand.CommandType = System.Data.CommandType.StoredProcedure;
+                    System.Data.DataTable DT = new System.Data.DataTable();
+                    SqlDataAdapter DA = new SqlDataAdapter(comand);
+                    BD.Open();//Abro la conexión
+                    DA.Fill(DT);//Doy Fill al dt
+                    BD.Close();//Cierro la conexión
+                    return DT;//Retorno el dataset
+
+                }
+                catch (Exception ex)//Muestro una salida en pantalla del error en caso de que lo haya
+                {
+                    Console.Write("No se pudo buscar lo deseado: " + ex.Message);
+                    return null;//No retorno nada en el caso de que haya un fallo
+                }
+            }
+        }
     }
 }

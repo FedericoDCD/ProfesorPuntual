@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIndex));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.BttnClose = new System.Windows.Forms.Button();
             this.Bar = new System.Windows.Forms.Panel();
@@ -58,13 +58,18 @@
             this.LblNom = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlTo = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DestLbVTipo = new System.Windows.Forms.Label();
+            this.DestLblVMail = new System.Windows.Forms.Label();
+            this.DestLblVNom = new System.Windows.Forms.Label();
+            this.DestLblVCurso = new System.Windows.Forms.Label();
+            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.DestBttnAgregar = new System.Windows.Forms.Button();
+            this.DestTxtNum = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DestTxtMail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DestTxtNom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DestCBTipo = new Bunifu.Framework.UI.BunifuDropdown();
+            this.DestTxtCurso = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.DestGVDest = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.BttnIndex = new System.Windows.Forms.Button();
             this.PBXInicio = new System.Windows.Forms.PictureBox();
@@ -283,52 +288,58 @@
             // 
             // IndGVDel
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IndGVDel.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.IndGVDel.AllowUserToAddRows = false;
+            this.IndGVDel.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.IndGVDel.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.IndGVDel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.IndGVDel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IndGVDel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.IndGVDel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.IndGVDel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.IndGVDel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.IndGVDel.DoubleBuffered = true;
             this.IndGVDel.EnableHeadersVisualStyles = false;
-            this.IndGVDel.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.IndGVDel.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.IndGVDel.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.IndGVDel.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
             this.IndGVDel.Location = new System.Drawing.Point(564, 118);
             this.IndGVDel.Name = "IndGVDel";
+            this.IndGVDel.ReadOnly = true;
             this.IndGVDel.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.IndGVDel.Size = new System.Drawing.Size(224, 196);
             this.IndGVDel.TabIndex = 9;
             // 
             // IndGVFunc
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IndGVFunc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.IndGVFunc.AllowUserToAddRows = false;
+            this.IndGVFunc.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.IndGVFunc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.IndGVFunc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.IndGVFunc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IndGVFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.IndGVFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.IndGVFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.IndGVFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.IndGVFunc.DoubleBuffered = true;
             this.IndGVFunc.EnableHeadersVisualStyles = false;
-            this.IndGVFunc.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.IndGVFunc.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.IndGVFunc.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.IndGVFunc.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
             this.IndGVFunc.Location = new System.Drawing.Point(299, 118);
             this.IndGVFunc.Name = "IndGVFunc";
+            this.IndGVFunc.ReadOnly = true;
             this.IndGVFunc.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.IndGVFunc.Size = new System.Drawing.Size(224, 196);
             this.IndGVFunc.TabIndex = 8;
@@ -360,7 +371,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(35)))), ((int)(((byte)(27)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(62, 67);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 37);
@@ -370,162 +381,232 @@
             // 
             // PnlTo
             // 
-            this.PnlTo.Controls.Add(this.button2);
-            this.PnlTo.Controls.Add(this.bunifuMaterialTextbox6);
-            this.PnlTo.Controls.Add(this.bunifuMaterialTextbox5);
-            this.PnlTo.Controls.Add(this.bunifuMaterialTextbox4);
+            this.PnlTo.Controls.Add(this.DestLbVTipo);
+            this.PnlTo.Controls.Add(this.DestLblVMail);
+            this.PnlTo.Controls.Add(this.DestLblVNom);
+            this.PnlTo.Controls.Add(this.DestLblVCurso);
+            this.PnlTo.Controls.Add(this.bunifuSeparator2);
+            this.PnlTo.Controls.Add(this.DestBttnAgregar);
+            this.PnlTo.Controls.Add(this.DestTxtNum);
+            this.PnlTo.Controls.Add(this.DestTxtMail);
+            this.PnlTo.Controls.Add(this.DestTxtNom);
             this.PnlTo.Controls.Add(this.label7);
-            this.PnlTo.Controls.Add(this.bunifuDropdown2);
-            this.PnlTo.Controls.Add(this.bunifuMaterialTextbox3);
+            this.PnlTo.Controls.Add(this.DestCBTipo);
+            this.PnlTo.Controls.Add(this.DestTxtCurso);
             this.PnlTo.Controls.Add(this.DestGVDest);
-            this.PnlTo.Location = new System.Drawing.Point(0, 93);
+            this.PnlTo.Location = new System.Drawing.Point(0, 89);
             this.PnlTo.Name = "PnlTo";
             this.PnlTo.Size = new System.Drawing.Size(799, 357);
             this.PnlTo.TabIndex = 10;
             this.PnlTo.Visible = false;
-            this.PnlTo.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlTo_Paint);
             // 
-            // button2
+            // DestLbVTipo
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(35)))), ((int)(((byte)(27)))));
-            this.button2.Location = new System.Drawing.Point(13, 303);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 47);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "AGREGAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.DestLbVTipo.AutoSize = true;
+            this.DestLbVTipo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestLbVTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.DestLbVTipo.Location = new System.Drawing.Point(264, 256);
+            this.DestLbVTipo.Name = "DestLbVTipo";
+            this.DestLbVTipo.Size = new System.Drawing.Size(18, 19);
+            this.DestLbVTipo.TabIndex = 27;
+            this.DestLbVTipo.Text = "*";
+            this.DestLbVTipo.Visible = false;
             // 
-            // bunifuMaterialTextbox6
+            // DestLblVMail
             // 
-            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox6.HintText = "Número";
-            this.bunifuMaterialTextbox6.isPassword = false;
-            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox6.LineThickness = 2;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(13, 191);
-            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
-            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox6.TabIndex = 21;
-            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestLblVMail.AutoSize = true;
+            this.DestLblVMail.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestLblVMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.DestLblVMail.Location = new System.Drawing.Point(264, 151);
+            this.DestLblVMail.Name = "DestLblVMail";
+            this.DestLblVMail.Size = new System.Drawing.Size(18, 19);
+            this.DestLblVMail.TabIndex = 26;
+            this.DestLblVMail.Text = "*";
+            this.DestLblVMail.Visible = false;
             // 
-            // bunifuMaterialTextbox5
+            // DestLblVNom
             // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox5.HintText = "Mail";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox5.LineThickness = 2;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(13, 134);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox5.TabIndex = 20;
-            this.bunifuMaterialTextbox5.Text = "Mail ";
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestLblVNom.AutoSize = true;
+            this.DestLblVNom.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestLblVNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.DestLblVNom.Location = new System.Drawing.Point(265, 96);
+            this.DestLblVNom.Name = "DestLblVNom";
+            this.DestLblVNom.Size = new System.Drawing.Size(18, 19);
+            this.DestLblVNom.TabIndex = 25;
+            this.DestLblVNom.Text = "*";
+            this.DestLblVNom.Visible = false;
             // 
-            // bunifuMaterialTextbox4
+            // DestLblVCurso
             // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.HintText = "Nombre";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox4.LineThickness = 2;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(13, 79);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox4.TabIndex = 19;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestLblVCurso.AutoSize = true;
+            this.DestLblVCurso.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestLblVCurso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(82)))), ((int)(((byte)(83)))));
+            this.DestLblVCurso.Location = new System.Drawing.Point(264, 40);
+            this.DestLblVCurso.Name = "DestLblVCurso";
+            this.DestLblVCurso.Size = new System.Drawing.Size(18, 19);
+            this.DestLblVCurso.TabIndex = 24;
+            this.DestLblVCurso.Text = "*";
+            this.DestLblVCurso.Visible = false;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
+            this.bunifuSeparator2.LineThickness = 4;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(299, 18);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(16, 319);
+            this.bunifuSeparator2.TabIndex = 23;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = true;
+            // 
+            // DestBttnAgregar
+            // 
+            this.DestBttnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestBttnAgregar.FlatAppearance.BorderSize = 0;
+            this.DestBttnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DestBttnAgregar.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestBttnAgregar.ForeColor = System.Drawing.Color.White;
+            this.DestBttnAgregar.Location = new System.Drawing.Point(13, 303);
+            this.DestBttnAgregar.Name = "DestBttnAgregar";
+            this.DestBttnAgregar.Size = new System.Drawing.Size(244, 47);
+            this.DestBttnAgregar.TabIndex = 22;
+            this.DestBttnAgregar.Text = "AGREGAR";
+            this.DestBttnAgregar.UseVisualStyleBackColor = false;
+            this.DestBttnAgregar.Click += new System.EventHandler(this.DestBttnAgregar_Click);
+            // 
+            // DestTxtNum
+            // 
+            this.DestTxtNum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DestTxtNum.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestTxtNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNum.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNum.HintText = "Número (Opcional)";
+            this.DestTxtNum.isPassword = false;
+            this.DestTxtNum.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNum.LineIdleColor = System.Drawing.Color.Gray;
+            this.DestTxtNum.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNum.LineThickness = 2;
+            this.DestTxtNum.Location = new System.Drawing.Point(13, 191);
+            this.DestTxtNum.Margin = new System.Windows.Forms.Padding(4);
+            this.DestTxtNum.Name = "DestTxtNum";
+            this.DestTxtNum.Size = new System.Drawing.Size(244, 36);
+            this.DestTxtNum.TabIndex = 4;
+            this.DestTxtNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // DestTxtMail
+            // 
+            this.DestTxtMail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DestTxtMail.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestTxtMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtMail.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtMail.HintText = "Mail ";
+            this.DestTxtMail.isPassword = false;
+            this.DestTxtMail.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtMail.LineIdleColor = System.Drawing.Color.Gray;
+            this.DestTxtMail.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtMail.LineThickness = 2;
+            this.DestTxtMail.Location = new System.Drawing.Point(13, 134);
+            this.DestTxtMail.Margin = new System.Windows.Forms.Padding(4);
+            this.DestTxtMail.Name = "DestTxtMail";
+            this.DestTxtMail.Size = new System.Drawing.Size(244, 36);
+            this.DestTxtMail.TabIndex = 3;
+            this.DestTxtMail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestTxtMail.Enter += new System.EventHandler(this.DestTxtMail_Enter);
+            // 
+            // DestTxtNom
+            // 
+            this.DestTxtNom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DestTxtNom.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestTxtNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNom.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNom.HintText = "Nombre";
+            this.DestTxtNom.isPassword = false;
+            this.DestTxtNom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNom.LineIdleColor = System.Drawing.Color.Gray;
+            this.DestTxtNom.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtNom.LineThickness = 2;
+            this.DestTxtNom.Location = new System.Drawing.Point(13, 79);
+            this.DestTxtNom.Margin = new System.Windows.Forms.Padding(4);
+            this.DestTxtNom.Name = "DestTxtNom";
+            this.DestTxtNom.Size = new System.Drawing.Size(244, 36);
+            this.DestTxtNom.TabIndex = 2;
+            this.DestTxtNom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestTxtNom.Enter += new System.EventHandler(this.DestTxtNom_Enter);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.label7.Location = new System.Drawing.Point(19, 255);
+            this.label7.Location = new System.Drawing.Point(9, 252);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 23);
             this.label7.TabIndex = 18;
             this.label7.Text = "Tipo:";
             // 
-            // bunifuDropdown2
+            // DestCBTipo
             // 
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[0];
-            this.bunifuDropdown2.Location = new System.Drawing.Point(75, 252);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuDropdown2.selectedIndex = -1;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(176, 35);
-            this.bunifuDropdown2.TabIndex = 17;
+            this.DestCBTipo.BackColor = System.Drawing.Color.Transparent;
+            this.DestCBTipo.BorderRadius = 3;
+            this.DestCBTipo.ForeColor = System.Drawing.Color.White;
+            this.DestCBTipo.Items = new string[0];
+            this.DestCBTipo.Location = new System.Drawing.Point(75, 248);
+            this.DestCBTipo.Name = "DestCBTipo";
+            this.DestCBTipo.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestCBTipo.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestCBTipo.selectedIndex = -1;
+            this.DestCBTipo.Size = new System.Drawing.Size(182, 35);
+            this.DestCBTipo.TabIndex = 17;
+            this.DestCBTipo.onItemSelected += new System.EventHandler(this.DestCBTipo_onItemSelected);
             // 
-            // bunifuMaterialTextbox3
+            // DestTxtCurso
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.HintText = "Curso";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
-            this.bunifuMaterialTextbox3.LineThickness = 2;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(13, 23);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(244, 36);
-            this.bunifuMaterialTextbox3.TabIndex = 16;
-            this.bunifuMaterialTextbox3.Text = "Curso ";
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestTxtCurso.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DestTxtCurso.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DestTxtCurso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtCurso.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtCurso.HintText = "Curso ";
+            this.DestTxtCurso.isPassword = false;
+            this.DestTxtCurso.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtCurso.LineIdleColor = System.Drawing.Color.Gray;
+            this.DestTxtCurso.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestTxtCurso.LineThickness = 2;
+            this.DestTxtCurso.Location = new System.Drawing.Point(13, 23);
+            this.DestTxtCurso.Margin = new System.Windows.Forms.Padding(4);
+            this.DestTxtCurso.Name = "DestTxtCurso";
+            this.DestTxtCurso.Size = new System.Drawing.Size(244, 36);
+            this.DestTxtCurso.TabIndex = 1;
+            this.DestTxtCurso.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DestTxtCurso.Enter += new System.EventHandler(this.DestTxtCurso_Enter);
             // 
             // DestGVDest
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DestGVDest.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DestGVDest.AllowUserToAddRows = false;
+            this.DestGVDest.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DestGVDest.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.DestGVDest.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.DestGVDest.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DestGVDest.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DestGVDest.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DestGVDest.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.DestGVDest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DestGVDest.DoubleBuffered = true;
             this.DestGVDest.EnableHeadersVisualStyles = false;
-            this.DestGVDest.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.DestGVDest.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.DestGVDest.Location = new System.Drawing.Point(343, 20);
+            this.DestGVDest.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.DestGVDest.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
+            this.DestGVDest.Location = new System.Drawing.Point(331, 24);
             this.DestGVDest.Name = "DestGVDest";
+            this.DestGVDest.ReadOnly = true;
             this.DestGVDest.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DestGVDest.Size = new System.Drawing.Size(431, 319);
+            this.DestGVDest.Size = new System.Drawing.Size(457, 319);
             this.DestGVDest.TabIndex = 15;
             // 
             // BttnIndex
@@ -611,7 +692,7 @@
             this.PnlMessage.Controls.Add(this.LblMessage);
             this.PnlMessage.Controls.Add(this.bunifuSeparator1);
             this.PnlMessage.Controls.Add(this.MensajesGMens);
-            this.PnlMessage.Location = new System.Drawing.Point(0, 89);
+            this.PnlMessage.Location = new System.Drawing.Point(0, 92);
             this.PnlMessage.Name = "PnlMessage";
             this.PnlMessage.Size = new System.Drawing.Size(796, 361);
             this.PnlMessage.TabIndex = 11;
@@ -623,9 +704,8 @@
             this.LblMessage.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
             this.LblMessage.Location = new System.Drawing.Point(14, 40);
-            this.LblMessage.MinimumSize = new System.Drawing.Size(430, 297);
             this.LblMessage.Name = "LblMessage";
-            this.LblMessage.Size = new System.Drawing.Size(430, 297);
+            this.LblMessage.Size = new System.Drawing.Size(0, 19);
             this.LblMessage.TabIndex = 18;
             // 
             // bunifuSeparator1
@@ -633,7 +713,7 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
             this.bunifuSeparator1.LineThickness = 4;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(460, 18);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(351, 19);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(16, 319);
             this.bunifuSeparator1.TabIndex = 17;
@@ -642,28 +722,31 @@
             // 
             // MensajesGMens
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.MensajesGMens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.MensajesGMens.AllowUserToAddRows = false;
+            this.MensajesGMens.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.MensajesGMens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.MensajesGMens.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(41)))));
             this.MensajesGMens.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MensajesGMens.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MensajesGMens.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MensajesGMens.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.MensajesGMens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MensajesGMens.DoubleBuffered = true;
             this.MensajesGMens.EnableHeadersVisualStyles = false;
-            this.MensajesGMens.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.MensajesGMens.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.MensajesGMens.Location = new System.Drawing.Point(477, 24);
+            this.MensajesGMens.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(172)))), ((int)(((byte)(132)))));
+            this.MensajesGMens.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(38)))), ((int)(((byte)(29)))));
+            this.MensajesGMens.Location = new System.Drawing.Point(373, 24);
             this.MensajesGMens.Name = "MensajesGMens";
+            this.MensajesGMens.ReadOnly = true;
             this.MensajesGMens.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.MensajesGMens.Size = new System.Drawing.Size(316, 310);
+            this.MensajesGMens.Size = new System.Drawing.Size(415, 310);
             this.MensajesGMens.TabIndex = 16;
             // 
             // FrmIndex
@@ -672,8 +755,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(800, 455);
-            this.Controls.Add(this.PnlMessage);
             this.Controls.Add(this.PnlTo);
+            this.Controls.Add(this.PnlMessage);
             this.Controls.Add(this.PBXMessage);
             this.Controls.Add(this.BttnMessage);
             this.Controls.Add(this.PBXTo);
@@ -737,16 +820,21 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel PnlTo;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuDropdown DestCBTipo;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox DestTxtCurso;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DestGVDest;
-        private System.Windows.Forms.Button button2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
+        private System.Windows.Forms.Button DestBttnAgregar;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox DestTxtNum;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox DestTxtMail;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox DestTxtNom;
         private System.Windows.Forms.Panel PnlMessage;
         private System.Windows.Forms.Label LblMessage;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid MensajesGMens;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private System.Windows.Forms.Label DestLblVMail;
+        private System.Windows.Forms.Label DestLblVNom;
+        private System.Windows.Forms.Label DestLblVCurso;
+        private System.Windows.Forms.Label DestLbVTipo;
     }
 }

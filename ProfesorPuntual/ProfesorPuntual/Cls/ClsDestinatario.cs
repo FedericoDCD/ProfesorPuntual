@@ -64,5 +64,15 @@ namespace ProfesorPuntual.Cls
         {
             this.IDTipo = IDTipo;
         }
+        //CONSTRUCTORES
+        public ClsDestinatario(String Curso, String Nombre, String Mail,String Numero, int IDTipo) {
+            this.Curso = Curso;
+            this.Nombre = Nombre;
+            this.Mail = Mail;
+            this.Numero = Numero;
+            this.IDTipo = IDTipo;
+        }
+        public ClsDestinatario() {
+        }
     }
 }
